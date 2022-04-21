@@ -4,14 +4,14 @@ import java.io.ObjectOutputStream;
 
 public class WriteObject {
     public static void main(String[] args) {
-        Person person1 = new Person(1, "Arthur");
-        Person person2 = new Person(2, "Anastasia");
-        Person[] people = {new Person(3,"Alexandra"),
-                new Person(4, "Viktoria"),
-                new Person(5, "Georgiy"),
-                new Person(6,"Valeria"),
-                new Person(7, "Nency"),
-                new Person(8, "Alexandr")};
+        Person person1 = new Person(1,"Arthur",23);
+        Person person2 = new Person(2,"Anastasia",19);
+        Person[] people = {new Person(3,"Alexandra",10),
+                new Person(4, "Viktoria",9),
+                new Person(5,"Georgiy",8),
+                new Person(6,"Valeria",7),
+                new Person(7,"Nency",6),
+                new Person(8,"Alexandr",5)};
 
         try {
             FileOutputStream fos = new FileOutputStream("people.bin");
