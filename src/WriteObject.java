@@ -8,7 +8,10 @@ public class WriteObject {
         Person person2 = new Person(2, "Anastasia");
         Person[] people = {new Person(3,"Alexandra"),
                 new Person(4, "Viktoria"),
-                new Person(5, "Georgiy")};
+                new Person(5, "Georgiy"),
+                new Person(6,"Valeria"),
+                new Person(7, "Nency"),
+                new Person(8, "Alexandr")};
 
         try {
             FileOutputStream fos = new FileOutputStream("people.bin");
@@ -27,7 +30,5 @@ public class WriteObject {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
