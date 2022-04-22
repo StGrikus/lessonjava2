@@ -21,7 +21,7 @@ public class ReadObject {
 
             System.out.println(person1);
             System.out.println(person2);
-            System.out.println(Arrays.toString(people));
+            //System.out.println(Arrays.toString(people));
 
             ois.close();
         } catch (IOException | ClassNotFoundException e) {
